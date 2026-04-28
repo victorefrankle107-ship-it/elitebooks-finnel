@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elite Reads</title>
+</head>
+<body style="background:black;color:white;text-align:center;padding:50px">
+
+<h1>📚 Free Ebook Funnel</h1>
+
+<input id="email" placeholder="Enter your email" />
+<button onclick="captureEmail()">Get Ebook</button>
+
+<p id="status"></p>
+
+<script>
+async function captureEmail(){
+  const email = document.getElementById('email').value;
+
+  document.getElementById('status').innerText = "Captured: " + email;
+
+  console.log("Email:", email);
+}
+</script>
+
+</body>
+</html>
